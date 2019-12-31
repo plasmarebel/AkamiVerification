@@ -11,9 +11,8 @@ while True:
     if token == "1":
         print(Fore.MAGENTA + "====== Footpatrol Cookie Validation ======")
         fpToken = input("Enter the _abck cookie: ")
-        count = len(fpToken)
 
-        if count == 397:
+        if len(fpToken) == 397:
             print(Fore.GREEN + "Valid Cookie")
         else:
             print(Fore.RED + "Invalid Cookie")
